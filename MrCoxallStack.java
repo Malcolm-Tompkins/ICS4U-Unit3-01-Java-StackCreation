@@ -1,13 +1,18 @@
+<<<<<<< HEAD
 /*
 * Mr Coxall Stack class
 * Created Dec 8, 2021
 */
+=======
+// Class for the Mr Coxall Stack program
+>>>>>>> 5e596240d6ef7ba11f056c59c7fd66de5ffdb955
 
 import java.util.ArrayList;
 
 /**
 * MrCoxallStack class.
 */
+<<<<<<< HEAD
 public class MrCoxallStack {
 
     /**
@@ -50,6 +55,41 @@ public class MrCoxallStack {
         final int firstElement = aStack.get(0);
         aStack.remove(0);
         return firstElement;
+=======
+public final class MrCoxallStack {
+
+    /**
+    * Creates stackAsArray as an ArrayList.
+    */
+    private static ArrayList<Integer> stackAsArray = new ArrayList<Integer>();
+
+    /**
+    * Prevent instantiation.
+    * Throw an exception IllegalStateException.
+    * if this ever is called
+    *
+    * @throws IllegalStateException
+    *
+    */
+    private MrCoxallStack() {
+        throw new IllegalStateException("Cannot be instantiated");
+    }
+
+    /**
+    * Function for pushing a number to the stack.
+    *
+    * @param pushNumber Number to be pushed into stack
+    */
+    public static void push(final int pushNumber) {
+        stackAsArray.add(0, pushNumber);
+    }
+
+    /**
+    * Function for showing the stack.
+    */
+    public static void showStack() {
+        System.out.println("The stack as an array is " + stackAsArray);
+>>>>>>> 5e596240d6ef7ba11f056c59c7fd66de5ffdb955
     }
 }
 
